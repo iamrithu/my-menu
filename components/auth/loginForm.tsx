@@ -33,17 +33,17 @@ const LoginForm = () => {
     console.log(values);
     login(values)
       .then((e) => {
-        if (e!.error) {
-          toast.error("Email/Password Incorrect", {
-            position: "top-right",
-            dismissible: true,
-          });
-          return;
-        }
-        toast.success("Logged in successfully!", {
-          position: "top-right",
-          dismissible: true,
-        });
+        // if (e!.error) {
+        //   toast.error("Email/Password Incorrect", {
+        //     position: "top-right",
+        //     dismissible: true,
+        //   });
+        //   return;
+        // }
+        // toast.success("Logged in successfully!", {
+        //   position: "top-right",
+        //   dismissible: true,
+        // });
       })
       .catch((e) => {
         toast.error("Email/Password Incorrect", {

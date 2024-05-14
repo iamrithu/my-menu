@@ -49,7 +49,7 @@ const MenuPage = () => {
               {session.data?.user?.name}
             </p>
             <p className="bg-blue-100  text-theme shadow-md p-1 text-sm rounded-sm capitalize">
-              {session.data?.user?.role}
+              User
             </p>
             <Button asChild>
               <Link
@@ -60,6 +60,14 @@ const MenuPage = () => {
               </Link>
             </Button>
             <div className="p-2  border-t mt-10">
+              <Button asChild onClick={() => {}}>
+                <Link
+                  href={"/admin/incredients"}
+                  className="bg-black font-bold mb-1"
+                >
+                  Admin
+                </Link>
+              </Button>
               <Button
                 onClick={() => {
                   signOut();

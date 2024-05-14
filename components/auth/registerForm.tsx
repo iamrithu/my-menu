@@ -36,6 +36,7 @@ const RegisterForm = () => {
           position: "top-right",
           dismissible: true,
         });
+        form.reset();
       } else {
         toast.error(res.message, {
           position: "top-right",
