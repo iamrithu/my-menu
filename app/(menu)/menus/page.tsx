@@ -17,9 +17,7 @@ import Menu from "@/components/menu/menu";
 import { DatePickerDemo } from "@/components/datePicker";
 import { format } from "date-fns";
 
-const page = () => {
-  const router = useRouter();
-  useEffect(() => {}, []);
+const MenuPage = () => {
   const session = useSession();
   const [date, setDte] = useState<string>("");
   return (
@@ -84,4 +82,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default MenuPage;

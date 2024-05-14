@@ -33,7 +33,10 @@ const User = () => {
           <div className=" w-full grid-col  grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 m-1">
             {data!.map((info, index) => {
               return (
-                <div className="w-full h-[100px] rounded-md shadow-md bg-white p-2 flex flex-row justify-center items-center relative">
+                <div
+                  key={index}
+                  className="w-full h-[100px] rounded-md shadow-md bg-white p-2 flex flex-row justify-center items-center relative"
+                >
                   <div>
                     <div className="w-[50px] h-[50px] flex justify-center items-center bg-black text-white rounded-full ">
                       {" "}

@@ -13,8 +13,8 @@ export default function Home() {
         </Button>
       </div>
       <div className="ml-40  p w-2/6 font-bold text-white text-xl tracking-wider ">
-        "Food is not just sustenance; it's a journey of flavors, textures, and
-        cultures. It's a symphony of ingredients orchestrated to tantalize our
+        Food is not just sustenance; its a journey of flavors, textures, and
+        cultures. Its a symphony of ingredients orchestrated to tantalize our
         taste buds and nourish our souls. From the delicate aroma of freshly
         baked bread to the robust spices of a sizzling curry, each dish tells a
         story of tradition, innovation, and craftsmanship. Food brings people

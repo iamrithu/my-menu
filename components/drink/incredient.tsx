@@ -48,7 +48,10 @@ const Drink = () => {
           <div className=" w-full grid-col  grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 m-1">
             {data.map((info, index) => {
               return (
-                <div className="w-full h-[200px] rounded-md shadow-md bg-white p-2 relative">
+                <div
+                  key={index}
+                  className="w-full h-[200px] rounded-md shadow-md bg-white p-2 relative"
+                >
                   <div
                     className="p-2 bg-white rounded-md shadow-lg absolute z-50 top-0 right-0 cursor-pointer"
                     onClick={() => {

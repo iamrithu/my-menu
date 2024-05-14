@@ -1,4 +1,4 @@
-import Incredient from "@/components/incredient/incredient";
+import Incredient from "@/components/incredient/timing";
 import React from "react";
 
 const page = () => {
