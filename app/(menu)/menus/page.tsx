@@ -51,14 +51,14 @@ const MenuPage = () => {
             <p className="bg-blue-100  text-theme shadow-md p-1 text-sm rounded-sm capitalize">
               User
             </p>
-            <Button asChild>
+            {/* <Button asChild>
               <Link
                 href={"/admin/incredients"}
                 className="w-full p-4 rounded-md m-2 shadow-md"
               >
                 Admin
-              </Link>
-            </Button>
+              </Link> */}
+            {/* </Button> */}
             <div className="p-2  border-t mt-10">
               <Button asChild onClick={() => {}}>
                 <Link
