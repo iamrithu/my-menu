@@ -35,13 +35,13 @@ const Incredient = () => {
     <div className="w-full h-full flex flex-col justify-center items-center px-20 relative">
       <>
         <div className="w-full h-[70px]  flex justify-between items-center">
-          <div className="text-md font-bold">Incredient List:</div>
+          <div className="text-md font-bold">Ingredients List:</div>
           <Button
             onClick={() => {
               setOpen(!open);
             }}
           >
-            Add Incredient
+            Add Ingredients
           </Button>
         </div>
         <div className="w-full flex-1 ">

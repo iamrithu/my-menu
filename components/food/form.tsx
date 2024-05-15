@@ -171,7 +171,7 @@ const FormContainer = ({ onClick, editValue, inc }: FormContainerProps) => {
             render={({ field }) => {
               return (
                 <FormItem>
-                  <FormLabel>Incredients</FormLabel>
+                  <FormLabel>Ingredients</FormLabel>
                   <FormControl>
                     <SelectIncredient
                       val={form.watch("incredient") as string}
