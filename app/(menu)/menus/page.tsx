@@ -116,8 +116,8 @@ const MenuPage = () => {
               we showcase a tantalizing array of meals designed to delight every
               palate. From our featured specialties to everyday favorites, our
               menu is thoughtfully curated to offer something for everyone.
-              Whether you're craving hearty mains, savory appetizers, indulgent
-              desserts, or refreshing beverages, you'll find a diverse selection
+              Whether youre craving hearty mains, savory appetizers, indulgent
+              desserts, or refreshing beverages, youll find a diverse selection
               to satisfy your culinary desires.
             </p>
           </div>
