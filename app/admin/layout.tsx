@@ -15,7 +15,7 @@ const ProductedLayout = ({ children }: ProductedLayoutProps) => {
     <main className="w-full h-full flex flex-row items-center justify-center">
       <SideBar />
       <div className="flex-1 h-full">
-        <div className="w-full h-full m-0 p-0 bg-blue-50">
+        <div className="w-full h-full m-0 p-0 ">
           <TopBar />
           <div className="w-full h-[calc(100vh-4rem)]  shadow-sm">
             {children}

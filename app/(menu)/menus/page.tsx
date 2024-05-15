@@ -108,7 +108,7 @@ const MenuPage = () => {
       </div>
       <div className="h-[100vh]  bg-white/90 overflow-y-auto ">
         <div className="h-[100vh] w-full flex flex-col md:flex-row justify-center items-center ">
-          <div className="bg-blue-500-1 flex-1 flex-col w-full h-full justify-center items-center mt-[200px]">
+          <div className="0-1 flex-1 flex-col w-full h-full justify-center items-center mt-[200px]">
             <h1 className="p-4 text-3xl bg-black rounded-md shadow-lg  text-white w-3/4 ml-auto mr-auto  flex  flex-row justify-center items-center mb-auto ">
               What we have on our menu?
             </h1>

@@ -25,7 +25,7 @@ export const apiAuthPrefix = "/api/auth";
  * @type {string}
  */
 
-export const DEFAULT_LOGIN_REDIRECT = "/menus";
+export const DEFAULT_LOGIN_REDIRECT = "/";
 
 /**
  * An array of routes that are used for authendication
