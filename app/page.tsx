@@ -35,7 +35,7 @@ export default function Home() {
                 Welcome to our restaurant! Our menu features a diverse selection
                 of dishes to tantalize your taste buds. Start your meal with one
                 of our tempting appetizers, ranging from refreshing salads to
-                crispy calamari. For the main course, indulge in our chef's
+                crispy calamari. For the main course, indulge in our chefs
                 specialties, including succulent steaks, fresh seafood, hearty
                 pasta dishes, and flavorful vegetarian options. Enhance your
                 meal with our selection of side dishes, from classic mashed
@@ -77,7 +77,7 @@ export default function Home() {
                   culture, community, creativity, emotion, nourishment, and
                   sustainability. It is a fundamental aspect of the human
                   experience, enriching our lives in countless ways and bringing
-                  people together in shared appreciation and celebration. Let's
+                  people together in shared appreciation and celebration. Lets
                   savor every bite and embrace the boundless pleasures of the
                   culinary world. Cheers to the joy of food! 🍽️🌍
                 </p>
@@ -110,15 +110,15 @@ export default function Home() {
                 <p className="mt-2 italic tracking-widest text-sm md:font-bold text-neutral-600">
                   Ah, the welcome drink—a delightful gesture that sets the tone
                   for a memorable experience! A welcome drink is more than just
-                  a beverage; it's a warm greeting, a gesture of hospitality,
-                  and a taste of what's to come. Whether it's a refreshing glass
-                  of sparkling water garnished with a twist of lemon, a fruity
+                  a beverage; its a warm greeting, a gesture of hospitality, and
+                  a taste of whats to come. Whether its a refreshing glass of
+                  sparkling water garnished with a twist of lemon, a fruity
                   mocktail bursting with tropical flavors, or a sophisticated
                   flute of champagne, the welcome drink is an invitation to
                   relax, unwind, and embark on a journey of culinary delights.
-                  It's the first impression that leaves a lasting impact,
+                  Its the first impression that leaves a lasting impact,
                   signaling to guests that they are valued and cared for from
-                  the moment they arrive. So here's to the welcome drink—a small
+                  the moment they arrive. So heres to the welcome drink—a small
                   but meaningful touch that adds a touch of elegance and charm
                   to any occasion. Cheers! 🥂
                 </p>
