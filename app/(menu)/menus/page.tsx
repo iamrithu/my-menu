@@ -107,7 +107,7 @@ const MenuPage = () => {
         </Popover>
       </div>
       <div className="h-[100vh]  bg-white/90 overflow-y-auto ">
-        <div className="h-[100vh] w-full flex flex-row justify-center items-center ">
+        <div className="h-[100vh] w-full flex flex-col md:flex-row justify-center items-center ">
           <div className="bg-blue-500-1 flex-1 flex-col w-full h-full justify-center items-center mt-[200px]">
             <h1 className="p-4 text-3xl bg-black rounded-md shadow-lg  text-white w-3/4 ml-auto mr-auto  flex  flex-row justify-center items-center mb-auto ">
               What we have on our menu?
@@ -121,7 +121,7 @@ const MenuPage = () => {
               to satisfy your culinary desires.
             </p>
           </div>
-          <div className="flex-1 w-full h-[90vh] overflow-y-auto scroll-smooth">
+          <div className="flex-1 w-full h-autp md:h-[90vh] md:overflow-y-auto scroll-smooth">
             <DatePickerDemo
               onChange={(e: any) => {
                 if (e) {
@@ -255,11 +255,6 @@ const MenuPage = () => {
                               fill
                               style={{ objectFit: "cover" }}
                             />
-                            <div className=" h-[30px] mt-3 px-3 flex justify-between z-10 items-center rounded-md shadow-sm absolute bottom-0 left-0">
-                              <div className="px-2 mb-1 py-1 bg-black text-white text-sm capitalize font-bold rounded-sm shadow-md">
-                                {info.timing} : {info.menuDate}
-                              </div>
-                            </div>
                           </div>
                           <div className=" w-full flex-row flex md:flex-col md:w-[200px]">
                             <div className="flex-1 w-full h-full flex flex-col ">
@@ -290,6 +285,11 @@ const MenuPage = () => {
                                   style={{ objectFit: "cover" }}
                                 />
                               </div>
+                            </div>
+                          </div>
+                          <div className=" h-[30px] mt-3 px-3 flex justify-between z-10 items-center rounded-md shadow-sm absolute bottom-0 left-0">
+                            <div className="px-2 mb-1 w-auto py-1 bg-black text-white text-sm capitalize font-bold rounded-sm shadow-md">
+                              {info.timing} : {info.menuDate}
                             </div>
                           </div>
                         </div>
@@ -344,10 +344,18 @@ const MenuPage = () => {
           </div>
         </div>
         <div className="w-full h-auto px-20">
-          <div className=" w-full flex flex-row items-center justify-center font-bold text-xl mb-[50px] ">
-            <div className="p-2 bg-black rounded-md shadow-sm text-white">
+          <div className=" w-full flex flex-col  items-center justify-center font-bold text-xl mb-[50px] ">
+            <div className="p-2 bg-black rounded-md shadow-sm text-white text-center">
               What types of foo can we serve?{" "}
             </div>
+            <p className="text-center text-md font-normal text-gray-600 mt-4 w-[600px]">
+              Savor the symphony of flavors in our culinary tapestry. From
+              aromatic spices to tender meats, each dish tells a story of
+              passion and tradition. Indulge in the richness of creamy sauces,
+              the crispness of fresh vegetables, and the warmth of homemade
+              bread. Every bite is an invitation to experience pure gastronomic
+              bliss.
+            </p>
           </div>
           <div className="w-full h-auto flex flex-row flex-grow justify-start items-center overflow-x-auto relative">
             {dataFood.map((info, index) => {
@@ -383,10 +391,18 @@ const MenuPage = () => {
         <div className="w-full h-[200px]"></div>
 
         <div className="w-full h-auto px-20">
-          <div className=" w-full flex flex-row items-center justify-center font-bold text-xl mb-[50px] ">
+          <div className=" w-full flex flex-col items-center justify-center font-bold text-xl mb-[50px] ">
             <div className="p-2 bg-black rounded-md shadow-sm text-white">
               What types of beverages can we serve?{" "}
             </div>
+            <p className="text-center text-md font-normal text-gray-600 mt-4 w-[600px]">
+              Beverages are the liquid symphonies that complement every meal,
+              tantalizing the senses and quenching the thirst. From the
+              comforting warmth of a steaming cup of coffee to the effervescent
+              fizz of a sparkling soda, each sip offers a moment of pure
+              refreshment. Explore our curated selection and elevate your dining
+              experience sip by sip.
+            </p>
           </div>
           <div className="w-full h-auto flex flex-row flex-grow justify-start items-center overflow-x-auto relative">
             {dataDrink.map((info, index) => {
@@ -414,10 +430,17 @@ const MenuPage = () => {
         </div>
         <div className="w-full h-[200px]"></div>
         <div className="w-full h-auto px-20">
-          <div className=" w-full flex flex-row items-center justify-center font-bold text-xl mb-[50px] ">
+          <div className=" w-full flex flex-col items-center justify-center font-bold text-xl mb-[50px] ">
             <div className="p-2 bg-black rounded-md shadow-sm text-white">
               Our most used ingredient{" "}
             </div>
+            <p className="text-center text-md font-normal text-gray-600 mt-4 w-[600px]">
+              Ingredients are the building blocks of culinary creativity, each
+              imbued with its own character and charm. From the vibrant hues of
+              freshly picked herbs to the robust flavors of ripe tomatoes, every
+              ingredient adds depth and nuance to a dish. Embrace the beauty of
+              simplicity and let natures bounty inspire your culinary journey.
+            </p>
           </div>
           <div className="w-full h-auto flex flex-row flex-grow justify-start items-center overflow-x-auto relative">
             {dataTime.map((info, index) => {

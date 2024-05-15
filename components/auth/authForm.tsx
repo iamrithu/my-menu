@@ -7,7 +7,7 @@ import LoginForm from "./loginForm";
 
 const AuthForm = () => {
   return (
-    <div className="w-full h-full flex justify-end items-center pr-48">
+    <div className="w-full h-full flex flex-col md:flex-row md:justify-end justify-center  items-center md:pr-48">
       <Card>
         <CardContent className="w-[400px] min-h-[400px] pt-4">
           <Tabs defaultValue="account" className="w-full">
