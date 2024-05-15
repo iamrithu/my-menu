@@ -18,7 +18,7 @@ const Profile = () => {
   return (
     <Popover>
       <PopoverTrigger>
-        <div className="p-3 shadow-sm hidden md:block hover:text-white bg-white text-black hover:bg-black rounded-md">
+        <div className="p-3 shadow-sm hover:text-white bg-white text-black hover:bg-black rounded-md">
           <FaUserCircle scale={40} />
         </div>
       </PopoverTrigger>

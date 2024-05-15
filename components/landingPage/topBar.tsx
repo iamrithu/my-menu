@@ -11,10 +11,12 @@ const TopBar = () => {
       <Logo />
       {/* NAV ITEM */}
       <Nav />
-      {/* MENU FOR MOBILE */}
-      <Menu />
-      {/* PROFILE */}
-      <Profile />
+      <div className="flex justify-center items-center">
+        {/* MENU FOR MOBILE */}
+        <Menu />
+        {/* PROFILE */}
+        <Profile />
+      </div>
     </div>
   );
 };
