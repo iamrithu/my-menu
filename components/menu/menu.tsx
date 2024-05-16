@@ -67,9 +67,9 @@ const Menu = ({ home, date }: props) => {
         </div>
       )}
 
-      <div className="w-full flex-1 overflow-y-auto overflow-x-hidden ">
+      <div className="w-full flex-1 overflow-y-auto overflow-x-hidden">
         {!date && (
-          <div className=" w-full grid-col  grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 m-1">
+          <div className=" w-full grid-col  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 m-1">
             {data.map((info, index) => {
               return (
                 <div
@@ -138,7 +138,7 @@ const Menu = ({ home, date }: props) => {
           </div>
         )}
         {date && (
-          <div className=" w-full grid-col  grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 m-1">
+          <div className=" w-full grid-col  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 m-1">
             {data.map((info, index) => {
               if (date === info.menuDate) {
                 return (

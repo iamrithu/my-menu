@@ -39,7 +39,7 @@ const SelectIncredient = ({ inc, onClick, val }: props) => {
             account and remove your data from our servers. */}
           </SheetDescription>
         </SheetHeader>
-        <div className=" w-full grid-col  grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 m-1">
+        <div className=" w-full grid-col  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6 m-1">
           {inc.map((info: any, index: any) => {
             return (
               <div

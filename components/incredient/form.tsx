@@ -154,7 +154,7 @@ const FormContainer = ({ onClick, editValue }: FormContainerProps) => {
               </Button>
             )}
             <Button type="submit" className="flex-1">
-              {editValue ? "Edit" : "Create"}
+              {editValue ? "Save" : "Create"}
             </Button>
           </div>
         </div>

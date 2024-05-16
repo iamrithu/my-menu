@@ -132,7 +132,7 @@ const MenuPage = () => {
               }}
             />
             {!date && (
-              <div className=" w-full grid-col  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-2">
+              <div className=" w-full grid-col  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6 mt-2">
                 {data.map((info, index) => {
                   return (
                     <div
@@ -236,7 +236,7 @@ const MenuPage = () => {
               </div>
             )}
             {date && (
-              <div className=" w-full grid-col  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 m-1">
+              <div className=" w-full grid-col  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6 m-1">
                 {data.map((info, index) => {
                   if (date === info.menuDate) {
                     return (

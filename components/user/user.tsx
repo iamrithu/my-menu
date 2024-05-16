@@ -30,7 +30,7 @@ const User = () => {
           <div className="text-md font-bold">User List:</div>
         </div>
         <div className="w-full flex-1 ">
-          <div className=" w-full grid-col  grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 m-1">
+          <div className=" w-full grid-col  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4  p-2 bg-blue-50 rounded-md gap-6 m-1">
             {data!.map((info, index) => {
               return (
                 <div

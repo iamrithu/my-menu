@@ -70,11 +70,11 @@ const MenuList = () => {
                     </div>
                   </div>
                 </DialogTrigger>
-                <DialogContent className="w-[400px] md:w-[600px] h-[700px]">
+                <DialogContent className="w-[400px] md:w-[500px] h-[600px] overflow-y-auto">
                   <DialogHeader>
                     <DialogTitle>{info.name}</DialogTitle>
                   </DialogHeader>
-                  <div className="w-full h-[250px] relative">
+                  <div className="w-full h-[200px] relative">
                     <Image
                       alt="Upload"
                       src={info.image}
