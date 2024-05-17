@@ -12,36 +12,83 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { FaRotate } from "react-icons/fa6";
+import { Button } from "../ui/button";
+import { getAllFood } from "@/data/food";
+import FormContainer from "../menu/form";
+import { getAllTiming } from "@/data/timing";
+import { getDrink } from "@/data/drink";
+import { DialogClose } from "@radix-ui/react-dialog";
+import { FaEdit } from "react-icons/fa";
+interface props {
+  onclick: Function;
+  onclick2: Function;
 
-const MenuList = () => {
+  newData: any[];
+}
+const MenuList = ({ onclick, newData, onclick2 }: props) => {
+  const [data1, setData1] = useState<any[]>([]);
+
   const [data, setData] = useState<any[]>([]);
-  const [date, setDte] = useState<string>("");
-
-  useEffect(() => {
+  const [loadind, setLoadind] = useState<boolean>(false);
+  const [dataTime, setDataTime] = useState<any[]>([]);
+  const [dataFood, setDataFood] = useState<any[]>([]);
+  const [dataDrink, setDataDrink] = useState<any[]>([]);
+  const [date, setDte] = useState<string>(
+    `${format(new Date(), "yyyy-MM-dd")}`
+  );
+  const getItems = () => {
     getAllMenu().then((e: any) => {
       setData(e);
     });
+  };
+  useEffect(() => {
+    setLoadind(true);
+    getAllMenu().then((e: any) => {
+      setData1(e);
+      setData(e.filter((e1: any) => e1.menuDate == date));
+
+      setLoadind(false);
+    });
   }, []);
-  if (data.length < 1) {
-    return (
-      <div className="w-full h-[300px] p-2  rounded-sm mt-4 flex justify-center items-center">
-        <p className="text-sm text-gray-600">data not found.</p>
-      </div>
-    );
-  }
+  useEffect(() => {
+    setData(data1.filter((e) => e.menuDate == date));
+  }, [date, newData]);
   return (
-    <div className="w-full h-full p-2  rounded-sm mt-4">
-      <DatePickerDemo
-        onChange={(e: any) => {
-          if (e) {
-            setDte(format(e, "yyyy-MM-dd"));
-          } else {
-            setDte("");
+    <div className="w-full h-full   rounded-sm  mt-6 relative px-24">
+      <div className="w-full flex justify-between items-center">
+        <div className="font-bold text-xl">Explore Our Menu</div>
+        <div className="flex w-[300px] justify-evenly items-center">
+          {
+            <p className="font-bold text-lg">
+              {format(new Date(), "yyyy-MM-dd") !== date ? date : "Today"}
+            </p>
           }
-        }}
-      />
-      <div className="w-full h-auto grid grid-cols-1 md:grid:cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4 ">
-        {!date &&
+          <DatePickerDemo
+            onChange={(e: any) => {
+              if (e) {
+                setDte(format(e, "yyyy-MM-dd"));
+              } else {
+                setDte(format(new Date(), "yyyy-MM-dd"));
+              }
+              setData(data1.filter((e) => e.menuDate == date));
+            }}
+          />
+          {format(new Date(), "yyyy-MM-dd") !== date && (
+            <Button
+              className="ml-[4px]"
+              onClick={() => {
+                setDte(format(new Date(), "yyyy-MM-dd"));
+              }}
+            >
+              <FaRotate />
+            </Button>
+          )}
+        </div>
+      </div>
+
+      <div className="w-full h-auto grid grid-cols-1 md:grid:cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-4 mt-4 ">
+        {/* {!date &&
           data.map((info, index) => {
             return (
               <Dialog key={index}>
@@ -127,7 +174,23 @@ const MenuList = () => {
                 </DialogContent>
               </Dialog>
             );
-          })}
+          })} */}
+        {data.length < 1 && (
+          <div className="w-full h-[200px] border  border-1 border-gray-200 shadow-sm  rounded-lg flex justify-center items-center">
+            {/* <Dialog>
+              <DialogTrigger> */}
+            <Button
+              onClick={() => {
+                onclick();
+              }}
+            >
+              Add a menu
+            </Button>
+            {/* </DialogTrigger>
+              <DialogContent className="w-[400px] md:w-[600px] h-[700px] overflow-y-auto">
+                <p>Add Menu :</p> */}
+          </div>
+        )}
         {date &&
           data.map((info, index) => {
             if (date === info.menuDate) {
@@ -136,9 +199,9 @@ const MenuList = () => {
                   <DialogTrigger>
                     <div
                       key={index}
-                      className="w-full h-[300px] flex flex-col bg-white justify-center items-center rounded-xl shadow-md  relative cursor-pointer md:hover:-mt-1 duration-300"
+                      className="w-full h-[200px] flex flex-col bg-white justify-center items-center rounded-xl shadow-md  relative cursor-pointer md:hover:-mt-1 duration-300"
                     >
-                      <div className="w-full h-[200px] relative">
+                      <div className="w-full flex-1 relative">
                         <Image
                           alt="Upload"
                           src={info.image}
@@ -147,20 +210,21 @@ const MenuList = () => {
                           style={{ objectFit: "cover" }}
                         />
                       </div>
-                      <div className="flex-1 w-full flex flex-col justify-center items-end mr-3">
-                        <p className="text-sm font-bold ">{info.name}</p>
-                        <p className="p-[4px] rounded-md bg-slate-500 text-white text-sm lowercase">
-                          {info.timing}
-                        </p>
-                        <p className="text-green-500 text-sm font-bold ">
-                          {info.menuDate}
-                        </p>
+                      <div className="h-[30px] w-full flex flex-col justify-center items-center ">
+                        <p className="text-sm font-bold ">{info.timing}</p>
                       </div>
                     </div>
                   </DialogTrigger>
                   <DialogContent className="w-[400px] md:w-[600px] h-[700px]">
                     <DialogHeader>
-                      <DialogTitle>{info.name}</DialogTitle>
+                      <DialogTitle>{info.name}</DialogTitle>{" "}
+                      <DialogClose
+                        onClick={() => {
+                          onclick2(info);
+                        }}
+                      >
+                        <FaEdit />
+                      </DialogClose>
                     </DialogHeader>
                     <div className="w-full h-[250px] relative">
                       <Image
@@ -217,6 +281,22 @@ const MenuList = () => {
               );
             }
           })}
+        {data.length > 0 && (
+          <div className="w-full h-[200px] border  border-1 border-gray-200 shadow-sm  rounded-lg flex justify-center items-center">
+            {/* <Dialog>
+              <DialogTrigger> */}
+            <Button
+              onClick={() => {
+                onclick();
+              }}
+            >
+              Add a menu
+            </Button>
+            {/* </DialogTrigger>
+              <DialogContent className="w-[400px] md:w-[600px] h-[700px] overflow-y-auto">
+                <p>Add Menu :</p> */}
+          </div>
+        )}
       </div>
     </div>
   );

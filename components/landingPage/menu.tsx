@@ -33,7 +33,7 @@ const Menu = () => {
         </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
-        <div className="p-4 px-3 cursor-pointer flex bg-slate-50 rounded-sm  mb-2 border-l-2 border-black hover:border-slate-500 mr-4 justify-center items-center ">
+        <div className="p-4 px-3 cursor-pointer flex flex-row bg-slate-50 rounded-sm  mb-2 border-l-2 border-black hover:border-slate-500 mr-4 justify-center items-center ">
           <BsMenuButtonWideFill className="mr-3" scale={10} mt-1 />
 
           <Link href={"#menu"}>

@@ -4,7 +4,6 @@ import { LoginSchema } from "@/schemas";
 import { getUserByEmail } from "./data/user";
 import bcrypt from "bcryptjs";
 
-
 export default {
   // trustHost: true,
   providers: [
@@ -12,13 +11,14 @@ export default {
       async authorize(credentials) {
         const validatedFields = LoginSchema.safeParse(credentials);
 
-        console.log(validatedFields.data)
+        console.log(validatedFields.data);
         if (validatedFields.success) {
           const { email, password } = validatedFields.data;
           const user = await getUserByEmail(email);
           if (!user || !user.password) return null;
           const passwordsMatch = await bcrypt.compare(password, user.password);
-          if (passwordsMatch) return user;
+          if (passwordsMatch) return Promise.resolve(user);
+          return null;
         }
 
         return null;

@@ -35,7 +35,13 @@ const Indredients = () => {
     );
   }
   return (
-    <div className="w-full h-full p-2  rounded-sm mt-4">
+    <div className="w-full h-full p-2  rounded-sm mt-4 px-24">
+      <div className="w-full h-[70px] flex justify-between items-center">
+        <div className="text-xl font-bold">
+          {" "}
+          Our Culinary Ingredients Collection :
+        </div>
+      </div>
       <Carousel
         className="w-full"
         plugins={[

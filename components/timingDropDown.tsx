@@ -34,11 +34,12 @@ const DropDown = ({ data, onClick, value }: Props) => {
         <SelectValue placeholder="" />
       </SelectTrigger>
       <SelectContent className="w-full">
-        {data.map((info: any, index) => (
-          <SelectItem key={index} value={info.name}>
-            {info.name}
-          </SelectItem>
-        ))}
+        {data &&
+          data.map((info: any, index) => (
+            <SelectItem key={index} value={info.name}>
+              {info.name}
+            </SelectItem>
+          ))}
       </SelectContent>
     </Select>
   );

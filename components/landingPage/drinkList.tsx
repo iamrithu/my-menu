@@ -33,7 +33,10 @@ const DrinkList = () => {
     );
   }
   return (
-    <div className="w-full h-full p-2  rounded-sm mt-4">
+    <div className="w-full h-full p-2  rounded-sm mt-4 px-24">
+      <div className="w-full h-[70px] flex justify-between items-center">
+        <div className="text-xl font-bold"> Our Top-Selling Beverage :</div>
+      </div>
       <Carousel
         className="w-full"
         plugins={[
@@ -51,8 +54,8 @@ const DrinkList = () => {
               <div className="p-1">
                 <Card>
                   <CardContent className="flex aspect-square items-center justify-center p-6">
-                    <div className="w-full h-full relative">
-                      <div className="w-full h-[250px]  md:h-[150px]  relative">
+                    <div className="w-full h-full flex flex-col justify-center items-center relative">
+                      <div className="w-full flex-1  md:h-[150px]  relative">
                         <Image
                           alt="Upload"
                           src={info.image}
@@ -62,7 +65,7 @@ const DrinkList = () => {
                         />
                       </div>
                       <div className="w-full h-[25px] flex justify-center items-center">
-                        <p className="text-sm font-bold text-blue-600">
+                        <p className="text-sm font-bold text-black">
                           {info.name}
                         </p>
                       </div>

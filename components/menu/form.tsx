@@ -163,7 +163,7 @@ const FormContainer = ({
                       value={form.watch("timing")!}
                       onClick={(e: any) => {
                         console.log(e);
-                        form.setValue("timing", e[0].name);
+                        form.setValue("timing", e[0].name! ?? "");
                       }}
                       data={dataTime}
                     />

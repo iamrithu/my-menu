@@ -17,6 +17,12 @@ const Nav = () => {
       icon: GiThermometerScale,
       link: "#ingredients",
     },
+    {
+      id: 1,
+      label: "About",
+      icon: FaUsers,
+      link: "#about",
+    },
   ];
   var data = [
     { name: "Food Items", href: "#food" },

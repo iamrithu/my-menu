@@ -16,7 +16,11 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "../ui/card";
 
-const FoodList = () => {
+interface props {
+  onclick2: Function;
+}
+
+const FoodList = ({ onclick2 }: props) => {
   const [data, setData] = useState<any[]>([]);
   const [date, setDte] = useState<string>("");
   useEffect(() => {
@@ -32,7 +36,10 @@ const FoodList = () => {
     );
   }
   return (
-    <div className="w-full h-full p-2  rounded-sm mt-4">
+    <div className="w-full h-full p-2  rounded-sm mt-4 px-24">
+      <div className="w-full h-[70px] flex justify-between items-center">
+        <div className="text-xl font-bold"> Our Top-Selling Dishes :</div>
+      </div>
       <Carousel
         className="w-full"
         plugins={[
@@ -44,14 +51,17 @@ const FoodList = () => {
         <CarouselContent className="-ml-1">
           {data.map((info, index) => (
             <CarouselItem
+              onDoubleClick={() => {
+                onclick2(info);
+              }}
               key={index}
               className="pl-1 md:basis-1/15 lg:basis-1/5"
             >
               <div className="p-1">
                 <Card>
                   <CardContent className="flex aspect-square items-center justify-center p-6">
-                    <div className="w-full h-full relative">
-                      <div className="w-full h-[250px]  md:h-[150px]  relative">
+                    <div className="w-full h-full flex flex-col justify-center items-center relative">
+                      <div className="w-full flex-1  md:h-[150px]  relative">
                         <Image
                           alt="Upload"
                           src={info.image}
@@ -61,7 +71,7 @@ const FoodList = () => {
                         />
                       </div>
                       <div className="w-full h-[25px] flex justify-center items-center">
-                        <p className="text-sm font-bold text-blue-600">
+                        <p className="text-sm font-bold text-black">
                           {info.name}
                         </p>
                       </div>
