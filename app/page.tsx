@@ -149,23 +149,23 @@ export default function Home() {
             <p className="w-full md:w-2/6   text-center text-lg text-gray-500 font-bold my-10">
               Experience the ease of menu management like never
               before.Experience the ease of menu management like never
-              before.Elevate your restaurant's reputation with seamless menu
-              updates.
+              before.Elevate your restaurant&apos;s reputation with seamless
+              menu updates.
             </p>
             <Button className=" text-sm mt-4">Explore</Button>
           </div>
 
           <div className="w-full h-auto flex flex-col justify-center items-center my-10 mt-15 bg-slate-50 pb-15">
             <h1 className="w-full md:w-3/4 text-md md:text-[60px]  font-extrabold text-center mt-10">
-              Today's Menu: Delight in Daily Offerings
+              Today &apos;s Menu: Delight in Daily Offerings
             </h1>
             <p className="w-full  md:w-2/6  m-10 text-center text-lg text-gray-70">
-              Discover what's cooking today with our dynamic menu feature.
-              Whether it's breakfast, lunch, or dinner, easily view daily
-              specials tailored to your time. Can't find what you're craving? No
-              problem! Create your own menu masterpiece in minutes. Each menu
-              can include a variety of delectable dishes and refreshing drinks,
-              ensuring your culinary creations shine bright.
+              Discover what &apos;s cooking today with our dynamic menu feature.
+              Whether it &apos;s breakfast, lunch, or dinner, easily view daily
+              specials tailored to your time. Can &apos;t find what you &apos;re
+              craving? No problem! Create your own menu masterpiece in minutes.
+              Each menu can include a variety of delectable dishes and
+              refreshing drinks, ensuring your culinary creations shine bright.
             </p>
             <MenuList
               newData={data}
@@ -334,7 +334,7 @@ export default function Home() {
               From refreshing classics to innovative concoctions, our beverage
               menu is crafted to delight every palate. Sip on handcrafted
               cocktails, indulge in aromatic coffees, or savor the sweetness of
-              our freshly squeezed juices. Whether you're in the mood for
+              our freshly squeezed juices. Whether you &apos;re in the mood for
               something bubbly, bold, or soothing, our curated selection of
               beverages promises to elevate your dining experience. Join us and
               discover your new favorite drink today
@@ -389,11 +389,12 @@ export default function Home() {
               From Farm to Table: Our Fresh Ingredients
             </h1>
             <p className="w-full md:w-2/6  m-10 text-center text-lg text-gray-70">
-              We believe that great meals start with great ingredients. That's
-              why we meticulously select only the freshest, highest-quality
-              ingredients for our dishes. From farm-fresh produce to sustainably
-              sourced meats and seafood, each ingredient is thoughtfully chosen
-              to ensure exceptional flavor and quality in every bite.
+              We believe that great meals start with great ingredients. That
+              &apos;s why we meticulously select only the freshest,
+              highest-quality ingredients for our dishes. From farm-fresh
+              produce to sustainably sourced meats and seafood, each ingredient
+              is thoughtfully chosen to ensure exceptional flavor and quality in
+              every bite.
             </p>
             <Indredients />
           </div>
@@ -500,11 +501,11 @@ export default function Home() {
             <p className="w-full md:w-2/6  text-lg text-gray-70">
               From our locally sourced ingredients to our meticulously crafted
               menus, we prioritize quality, sustainability, and authenticity in
-              everything we do. Whether you're joining us for a casual meal,
-              celebrating a special occasion, or seeking inspiration for your
-              next culinary adventure, we invite you to experience the magic of
-              [Your Company Name]. Welcome to a world where flavor knows no
-              bounds.
+              everything we do. Whether you &apos;re joining us for a casual
+              meal, celebrating a special occasion, or seeking inspiration for
+              your next culinary adventure, we invite you to experience the
+              magic of [Your Company Name]. Welcome to a world where flavor
+              knows no bounds.
             </p>
           </div>
           <Footer />
