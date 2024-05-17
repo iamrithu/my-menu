@@ -49,7 +49,7 @@ const TopBar = ({ onClick }: props) => {
           <Sheet>
             <SheetTrigger asChild>
               <Button variant={"outline"} className="mr-4">
-                <FaPlus />
+                <FaPlus /> <p className="hidden md:block ml-1">Add Items</p>
               </Button>
             </SheetTrigger>
             <SheetContent>

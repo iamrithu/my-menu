@@ -343,7 +343,7 @@ const MenuPage = () => {
             )}
           </div>
         </div>
-        <div className="w-full h-auto px-20">
+        <div className="w-full h-auto px-4 md:px-20 ">
           <div className=" w-full flex flex-col  items-center justify-center font-bold text-xl mb-[50px] ">
             <div className="p-2 bg-black rounded-md shadow-sm text-white text-center">
               What types of foo can we serve?{" "}
@@ -390,7 +390,7 @@ const MenuPage = () => {
         </div>
         <div className="w-full h-[200px]"></div>
 
-        <div className="w-full h-auto px-20">
+        <div className="w-full h-auto px-4 md:px-20 ">
           <div className=" w-full flex flex-col items-center justify-center font-bold text-xl mb-[50px] ">
             <div className="p-2 bg-black rounded-md shadow-sm text-white">
               What types of beverages can we serve?{" "}
@@ -429,7 +429,7 @@ const MenuPage = () => {
           </div>
         </div>
         <div className="w-full h-[200px]"></div>
-        <div className="w-full h-auto px-20">
+        <div className="w-full h-auto px-4 md:px-20 ">
           <div className=" w-full flex flex-col items-center justify-center font-bold text-xl mb-[50px] ">
             <div className="p-2 bg-black rounded-md shadow-sm text-white">
               Our most used ingredient{" "}

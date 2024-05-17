@@ -146,7 +146,7 @@ export default function Home() {
             <h1 className="w-full md:w-3/4 text-md text-md md:text-[60px]  font-extrabold text-center">
               Revolutionize Your Menu Experience: Uncomplicated Excellence
             </h1>
-            <p className="w-full md:w-2/6   text-center text-lg text-gray-500 font-bold my-10">
+            <p className="w-full md:w-2/6   text-center text-sm md:text-lg text-gray-500 font-bold my-10">
               Experience the ease of menu management like never
               before.Experience the ease of menu management like never
               before.Elevate your restaurant&apos;s reputation with seamless
@@ -159,7 +159,7 @@ export default function Home() {
             <h1 className="w-full md:w-3/4 text-md md:text-[60px]  font-extrabold text-center mt-10">
               Today &apos;s Menu: Delight in Daily Offerings
             </h1>
-            <p className="w-full  md:w-2/6  m-10 text-center text-lg text-gray-70">
+            <p className="w-full  md:w-2/6  m-10 text-center text-sm md:text-lg text-gray-70">
               Discover what &apos;s cooking today with our dynamic menu feature.
               Whether it &apos;s breakfast, lunch, or dinner, easily view daily
               specials tailored to your time. Can &apos;t find what you &apos;re
@@ -185,7 +185,7 @@ export default function Home() {
                 </p>
               </h1>
 
-              <p className="w-full md:w-2/6  m-10 text-center text-lg text-gray-70">
+              <p className="w-full md:w-2/6  m-10 text-center text-sm md:text-lg text-gray-70">
                 Behind every delectable dish and delightful dining experience is
                 a team of passionate individuals dedicated to culinary
                 excellence. Get to know the talented chefs, mixologists, and
@@ -273,7 +273,7 @@ export default function Home() {
             <h1 className="w-full md:w-3/4 text-md md:text-[60px]  font-extrabold text-center mt-10">
               Indulge in Culinary Excellence: Our Signature Dishes
             </h1>
-            <p className="w-full md:w-2/6  m-10 text-center text-lg text-gray-70">
+            <p className="w-full md:w-2/6  m-10 text-center text-sm md:text-lg text-gray-70">
               Prepare to tantalize your taste buds with our extraordinary
               culinary creations. At My Menu, we pride ourselves on crafting
               exceptional dishes that showcase the artistry and expertise of our
@@ -330,7 +330,7 @@ export default function Home() {
             <h1 className="w-full md:w-3/4 text-md md:text-[60px]  font-extrabold text-center mt-10">
               Quench Your Thirst: Explore Our Beverage Menu
             </h1>
-            <p className="w-full md:w-2/6  m-10 text-center text-lg text-gray-70">
+            <p className="w-full md:w-2/6  m-10 text-center text-sm md:text-lg text-gray-70">
               From refreshing classics to innovative concoctions, our beverage
               menu is crafted to delight every palate. Sip on handcrafted
               cocktails, indulge in aromatic coffees, or savor the sweetness of
@@ -388,7 +388,7 @@ export default function Home() {
             <h1 className="w-full md:w-3/4 text-md md:text-[60px]  font-extrabold text-center mt-10">
               From Farm to Table: Our Fresh Ingredients
             </h1>
-            <p className="w-full md:w-2/6  m-10 text-center text-lg text-gray-70">
+            <p className="w-full md:w-2/6  m-10 text-center text-sm md:text-lg text-gray-70">
               We believe that great meals start with great ingredients. That
               &apos;s why we meticulously select only the freshest,
               highest-quality ingredients for our dishes. From farm-fresh
@@ -482,7 +482,7 @@ export default function Home() {
             <h1 className="w-full md:w-3/4 text-md md:text-[60px]  font-extrabold text-center mt-10">
               Get to Know Us :
             </h1>
-            <p className="w-full md:w-2/6  text-lg text-gray-70">
+            <p className="w-full md:w-2/6  text-sm md:text-lg text-gray-70">
               At My Menu, we are more than just a restaurant; we are culinary
               artisans dedicated to crafting unforgettable dining experiences.
               With a passion for creativity and a commitment to excellence, we
@@ -490,7 +490,7 @@ export default function Home() {
               delight the palate and nourish the soul.
             </p>
             <br />
-            <p className="w-full md:w-2/6   text-lg text-gray-70">
+            <p className="w-full md:w-2/6   text-sm md:text-lg text-gray-70">
               Our journey began with a shared love for food and a vision to
               redefine the dining experience. Today, we proudly stand as a
               beacon of culinary innovation, where every dish tells a story and
@@ -498,7 +498,7 @@ export default function Home() {
             </p>
             <br />
 
-            <p className="w-full md:w-2/6  text-lg text-gray-70">
+            <p className="w-full md:w-2/6  text-sm md:text-lg text-gray-70">
               From our locally sourced ingredients to our meticulously crafted
               menus, we prioritize quality, sustainability, and authenticity in
               everything we do. Whether you &apos;re joining us for a casual

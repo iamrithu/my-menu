@@ -32,7 +32,7 @@ const Drink = () => {
   const [open, setOpen] = useState<boolean>(false);
   const [editValue, setEdit] = useState<any | null>(null);
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center px-20 relative">
+    <div className="w-full h-full flex flex-col justify-center items-center px-4 md:px-20  relative">
       <>
         <div className="w-full h-[70px]  flex justify-between items-center">
           <div className="text-md font-bold">Drink List:</div>
